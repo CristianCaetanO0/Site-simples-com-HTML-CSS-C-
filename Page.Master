@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="Projeto3.Page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link href="css/Projeto.css" rel="stylesheet" />
+    <!-- Para inserir slides -->
+    <!-- Flexslider: http://flexslider.woothemes.com/ -->
+    <link href="js/flexslider.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/flexslider.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Cabeçalho -->
+        <div class="content-wrap">
+            <div class="cabecalho">
+               <h1>Análise e Desenvolvimento de Sistemas</h1>
+                <!--<asp:Image Height="100px" right="300px" Width="200px" ID="Image6" ImageUrl="~/images/Banner%20%20%20ads.png"  runat="server" />-->
+                <!-- Logomarca -->
+                <!--<div class="logomarca">
+                    <asp:Image Width="100%" ID="Image1" ImageUrl="~/images/ChicagoTechnology.png" runat="server" />
+                </div>-->
+                <!-- Titulo -->
+                <div class="barra-titulo">
+                    
+                </div>
+                <!-- Menu -->
+                <div class="barra-menu">
+
+                    <a runat="server" id="home" href="~/Default.aspx">HOME</a>
+
+                    <a id="Excecoes" visible="false" runat="server" href="~/Admin/ExibirExcecoe.aspx">EXIBIR EXCEÇÕES</a>
+
+                    <a runat="server" id="Representantes" visible="false" href="~/Admin/Representantes.aspx">REPRESENTANTES</a>
+
+                    <a runat="server" id="fale" href="~/FaleConosco.aspx">CONTATO</a>
+
+                    <a runat="server" id="Entrar" visible="true" href="~/Login.aspx">RESPONSABILIDADE SOCIAL</a>
+                    <a runat="server" id="Sair" visible="false" href="~/Logout.aspx">SAIR</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="conteudo">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Rodapé -->
+        <div class="rodape">
+            <div class="content-wrap">
+                <div class="row">
+                    <div class="col-4">
+                        <h2>Curso ADS</h2><br />
+                        <h3>Chicago Technology</h3>
+                        <h4>Americana</h4>
+                    </div>
+                    <div class="col-4">
+                        <h2>Como ingressar</h2><br />
+                        <ul>
+                          <li><h4>Vestibular online</h4></li>
+                          <li><h4>Transferencia externa</h4></li>
+                          <li><h4>Nota do enem</h4></li>
+                          <li><h4>Segunda graduação</h4></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/ChicagoTechnology.png" width="100" height="100" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
